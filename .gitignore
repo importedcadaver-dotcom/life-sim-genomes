@@ -1,0 +1,33 @@
+# Python caches and build products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Generated coverage, reports, and runtime outputs
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+junit.xml
+*.log
+*.tmp
+*.bak
+*.sqlite
+*.sqlite3
+*.db
+outputs/
+artifacts/
+screenshots/
+
+# Research output is intentionally outside the versioned source tree.
+# Three historically supplied checkpoint files are force-tracked test fixtures.
+results/

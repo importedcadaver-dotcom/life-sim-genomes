@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "accidental-biosphere"
+version = "1.1.0"
+description = "A pink artificial-life observatory with evolving neural, biological, and regulatory genomes"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3"]
+[project.optional-dependencies]
+viewer = ["pygame-ce>=2.5,<3"]
+analysis = ["matplotlib>=3.8,<4"]
+test = ["pytest>=8,<10", "ruff>=0.9,<1"]
+[project.scripts]
+biosphere = "biosphere.cli:main"
+[tool.setuptools.packages.find]
+include = ["biosphere*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+[tool.ruff]
+line-length = 105
